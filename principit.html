@@ -26,7 +26,7 @@
 	h1.title{display: none;}
 	.title-1{
 		font-family: 'Montserrat', sans-serif;
-		color: #2d6b94;
+		color:#7b5e0c;
 		font-weight: 400;
 		text-align: center;
 		font-size: 2em!important;
@@ -45,13 +45,14 @@
 	.p-15{padding: 15px!important;}
 
 	@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
-	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BenchNine&family=Montserrat:wght@300;400;600&family=Outfit&family=Poppins:wght@300;400&family=Pragati+Narrow:wght@400;700&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=BenchNine:wght@400;700&family=Libre+Baskerville&family=Montserrat:wght@300;400;600&family=Outfit&family=Poppins:wght@300;400&family=Pragati+Narrow:wght@400;700&display=swap');
 
 	.roboto{font-family: 'Roboto Slab', sans-serif;}
 	.pragati{font-family: 'Pragati Narrow', sans-serif;}
 	.poppins{font-family: 'Poppins', sans-serif;}
 	.outfit{font-family: 'Outfit', sans-serif;}
 	.montserrat{font-family: 'Montserrat', sans-serif;}
+	.basker{font-family: 'Libre Baskerville', serif;}
 
 	.fz-1--3{font-size: 1.3em!important;}
 	.fz-1--1{font-size: 1.1em!important;}
@@ -79,7 +80,7 @@
 	}
 
 	.title-2{
-		color: #2d6b94;
+		color:#7b5e0c;
 		font-family: 'Outfit', sans-serif;
 		font-weight: 400;
 		font-size: 1.2em!important;
@@ -96,21 +97,20 @@
 	.text{
 		font-family: 'Outfit', sans-serif;
 	
-		color: #2d6b94;
+		color:#7b5e0c;
 		font-size: 1.2em!important;
 		font-weight: 400;
 	}
 	.text-2{
 		font-family: 'Montserrat', sans-serif;
 		text-transform: uppercase;
-		color: #2d6b94;
+		color:#7b5e0c;
 		font-size: 1.5em!important;
 		font-weight: 400;
 	}
 	.text-3{
-		font-family: 'Montserrat', sans-serif;
 		text-transform: uppercase;
-		color: #2d6b94;
+		color:#7b5e0c;
 		font-weight: 600;
 	}
 	.fz-1--5{font-size: 1.5em!important;}
@@ -123,29 +123,39 @@
 		img.absolute{display: none;}
 	}
 	ul.inside{list-style: disc inside none!important;}
+	.bg-gradient{background-image: linear-gradient(#ecddb9,#56dfab);}
+	.relative{position: relative;}
+	.absolute{position: absolute;}
 </style>
-<div class="row bg- pb-4 text-center">
+<div class="row bg-gradient pb-4 text-center relative" style="padding-top:4em">
 
-	<div class="col-md-12">
+	<div class="col-md-12 relative" style="z-index: 2;">
 		<p class="title-2" style="text-transform: uppercase;">Conferencia y exposición temática con carácter interactivo sobre la vida y obra de Antoine De Saint – Exupêry</p>
-		<div class="relative flex center" style="padding:2em">
-			<p class="title-1" style="font-weight:600">Re-descubriendo al “Principito”: El Universo Humanista de Antoine De Saint – Exupêry</p>
+		<div class="" style="padding:2em;text-align: center;">
+			<p class="title-1 basker" style="font-weight:600">Re-descubriendo a</p>
+				<img src="https://pendulo.com/archivos/el-principito.png" style="width: 60%;">
+			 <p class="text-3 montserrat fz-1--5">El Universo Humanista de Antoine De Saint – Exupêry</p>
+
 		</div>
 	</div>
-	<div class="col-md-12 roboto">
-		<p class="text-3 fz-1--5 mb-1">TEMARIO GENERAL:</p>
+	<div class="col-md-12 roboto relative" style="z-index: 2;padding-bottom:6em;">
+		<p class="text-3 montserrat fz-1--5 mb-1">TEMARIO GENERAL:</p>
 		<ul class="mb-2 text inside" style="padding: 0 20%; text-align: left;">
 			<li>Antoine De Saint – Exupêry. “Cuando sólo es posible ver bien con el corazón”</li>
 			<li>Dibújame un cordero</li>
 			<li>La herencia universal del Principito</li>
 			<li>El público podrá admirar algunas ediciones del Principito editadas en varios idiomas y diversos documentos relativos al autor y su inmortal personaje</li>
 		</ul>
-		<p class="m-0 text-3 fz-1--5">Por Juan Antonio José</p>
+		<p class="m-0 text-3 montserrat fz-1--5 basker">Por Juan Antonio José</p>
 		<p class="mb-2 text">Académico, conferencista y escritor aeronáutico y corresponsal en México <br> del proyecto de Asociación Saint – Exupêry</p>
-		<p class="m-0 text-3 fz-1--7">Horario: <span class="fw-400">19:30 hrs</span></p>
-		<p class="mb-2 text-3 fz-1--7">Fecha: <span class="fw-400">Martes 01 de febrero de 2022</span></p>
-		<p class="mb-2 text"><span class="text-3">Lugar: </span>En el foro del Tejedor dentro de El Péndulo Roma <br> Álvaro Obregón 86</p>
-		<p class="mb-2 text"><span class="text-3">Costo: </span>$300</p>
+		<div style="background-color:#d4b04d;width: fit-content; margin:auto;padding:1em;">
+			<p class="m-0 text-3 montserrat fz-1--7" style="color:#6e5f1c;">Horario: <span class="fw-400">19:30 hrs</span></p>
+			<p class="text-3 montserrat fz-1--7" style="color:#6e5f1c;">Fecha: <span class="fw-400">Martes 01 de febrero de 2022</span></p>
+		</div>
+		
+		<p class="mt-2 text"><span class="text-3 montserrat">Lugar: </span>En el foro del Tejedor dentro de El Péndulo Roma <br> Álvaro Obregón 86</p>
+		<p class="mb-2 text"><span class="text-3 montserrat">Costo: </span>$300</p>
 		<a href="https://www.forodeltejedor.com/evento/re-descubriendo-al-principito-2276/" class="btn btn-primary">Compra tu boleto</a>
 	</div>
+	<img class="absolute" style="bottom:0;right:0; width:50%; z-index: 1;margin:0"src="https://pendulo.com/archivos/principito.png">
 </div>
